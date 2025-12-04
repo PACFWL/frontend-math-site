@@ -1,0 +1,16 @@
+/* EDIT PAGE ======================================== */
+
+.edit-sector-title {
+  font-size: 28px;
+  color: #1E3A8A;
+}
+
+.edit-sector-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.edit-sector-button {
+  align-self: flex-start;
+}

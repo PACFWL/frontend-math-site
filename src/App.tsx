@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import "./styles/styles.css";
+import SectorList from "./pages/SectorList";
+import SectorCreate from "./pages/SectorCreate";
+import SectorEdit from "./pages/SectorEdit";
 
-function App() {
-  const [count, setCount] = useState(0)
 
+import TopicList from "./pages/TopicList";
+import TopicCreate from "./pages/TopicCreate";
+import TopicEdit from "./pages/TopicEdit";
+
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <BrowserRouter>
+      <Routes>
 
-export default App
+        {/* Redireciona raiz para /sector */}
+        <Route path="/" element={<Navigate to="/sector" />} />
+
+        {/* CRUD de setores */}
+        <Route path="/sector" element={<SectorList />} />
+        <Route path="/sector/create" element={<SectorCreate />} />
+        <Route path="/sector/edit/:id" element={<SectorEdit />} />
+
+        {/* CRUD de tópicos */}
+        <Route path="/sector/:sectorId/topics" element={<TopicList />} />
+        <Route path="/sector/:sectorId/topics/create" element={<TopicCreate />} />
+        <Route path="/sector/:sectorId/topics/edit/:topicId" element={<TopicEdit />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}

@@ -1,0 +1,95 @@
+/* ===============================
+   GLOBAL
+=============================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background: #ECEFF4; /* cinza-azulado elegante */
+  color: #1F2937;
+}
+
+h1 {
+  color: #1E3A8A; /* azul profundo matemático */
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* ===============================
+   CONTAINER CENTRAL
+=============================== */
+.page-container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: #FFFFFF;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  border-left: 4px solid #4F46E5; /* destaque matemático */
+}
+
+/* ===============================
+   FORM
+=============================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, textarea {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #C5D0E1;
+  background: #F7F9FC;
+  color: #1F2937; /* texto visível */
+  font-size: 16px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #4F46E5;
+  box-shadow: 0 0 0 2px rgba(79,70,229,0.25);
+}
+
+textarea {
+  min-height: 120px;
+}
+
+/* Placeholders mais elegantes */
+input::placeholder,
+textarea::placeholder {
+  color: #6B7280;
+}
+
+/* ===============================
+   BUTTONS
+=============================== */
+button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #4F46E5;   /* roxo matemático */
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #4338CA;
+}
+
+.btn-danger {
+  background: #DC2626;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #B91C1C;
+}

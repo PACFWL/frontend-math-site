@@ -1,0 +1,16 @@
+/* CREATE PAGE ======================================== */
+
+.create-sector-title {
+  font-size: 28px;
+  color: #4F46E5;
+}
+
+.create-sector-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.create-sector-button {
+  align-self: flex-start;
+}

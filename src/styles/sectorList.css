@@ -1,0 +1,29 @@
+/* LISTA DE SETORES ========================================= */
+
+.sector-list-title {
+  font-size: 28px;
+}
+
+.sector-list-container {
+  margin-top: 24px;
+}
+
+.sector-item {
+  padding: 20px;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  background: #fff;
+  margin-bottom: 12px;
+  transition: 0.25s ease;
+}
+
+.sector-item:hover {
+  box-shadow: 0 5px 14px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+
+.sector-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+}
