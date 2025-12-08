@@ -15,23 +15,35 @@ export default function SectorList() {
   if (loading) return <p>Carregando...</p>;
 
   return (
-    <div>
-      <h1>Sectores</h1>
+    <div className="sector-page">
+      <div className="sector-header">
+        <h1>Sectores</h1>
+        <Link className="btn-primary" to="/sector/create">Criar novo</Link>
+      </div>
 
-      <Link to="/sector/create">Criar novo</Link>
-     <ul>
+      <ul className="sector-list">
         {sectors.map((s) => (
-          <li key={s.id}>
-            <b>{s.name}</b> — {s.description}
+          <li key={s.id} className="sector-card">
+            <div className="sector-info">
+              <h2>{s.name}</h2>
+              <p>{s.description}</p>
+            </div>
 
-            <div>
-              <Link to={`/sector/${s.id}/topics`}>
+            <div className="sector-actions">
+              <Link className="btn-outline" to={`/sector/${s.id}/topics`}>
                 Ver Tópicos
               </Link>
-              {" | "}
-              <Link to={`/sector/edit/${s.id}`}>Editar</Link>
-              {" | "}
-              <button onClick={() => handleDelete(s.id!)}>Excluir</button>
+
+              <Link className="btn-edit" to={`/sector/edit/${s.id}`}>
+                Editar
+              </Link>
+
+              <button
+                className="btn-delete"
+                onClick={() => handleDelete(s.id!)}
+              >
+                Excluir
+              </button>
             </div>
           </li>
         ))}

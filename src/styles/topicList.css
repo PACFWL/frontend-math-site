@@ -1,0 +1,96 @@
+.topic-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.topic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.topic-header h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #333;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+}
+
+.topic-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.topic-item {
+  background: #f7f7f7;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+  border-left: 4px solid #007bff;
+}
+
+.topic-item:hover {
+  background: #f0f0f0;
+}
+
+.topic-title {
+  font-size: 18px;
+  color: #222;
+}
+
+.topic-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: #005fcc;
+}
+
+.btn-edit {
+  background: #ffaa00;
+  padding: 6px 12px;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-edit:hover {
+  background: #e69800;
+}
+
+.btn-delete {
+  background: #e63946;
+  padding: 6px 12px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: #c92a35;
+}

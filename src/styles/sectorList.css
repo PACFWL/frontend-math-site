@@ -1,29 +1,118 @@
-/* LISTA DE SETORES ========================================= */
+/* Página geral */
+.sector-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
 
-.sector-list-title {
+/* Cabeçalho */
+.sector-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.sector-header h1 {
+  margin: 0;
   font-size: 28px;
+  color: #333;
 }
 
-.sector-list-container {
-  margin-top: 24px;
+/* Lista */
+.sector-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.sector-item {
-  padding: 20px;
-  border: 1px solid #E2E8F0;
-  border-radius: 12px;
+/* Card */
+.sector-card {
   background: #fff;
-  margin-bottom: 12px;
-  transition: 0.25s ease;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.sector-item:hover {
-  box-shadow: 0 5px 14px rgba(0,0,0,0.06);
-  transform: translateY(-2px);
+.sector-info h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #222;
 }
 
+.sector-info p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+/* Botões */
+.btn-primary {
+  background: #4a7afe;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: #3a63d6;
+}
+
+/* Ações nos cards */
 .sector-actions {
   display: flex;
-  gap: 14px;
-  margin-top: 10px;
+  gap: 10px;
+}
+
+.btn-outline {
+  border: 2px solid #4a7afe;
+  background: transparent;
+  color: #4a7afe;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-outline:hover {
+  background: #4a7afe;
+  color: white;
+}
+
+.btn-edit {
+  background: #ffbb33;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-edit:hover {
+  background: #e0a42d;
+}
+
+.btn-delete {
+  background: #ff5555;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-delete:hover {
+  background: #d94444;
 }

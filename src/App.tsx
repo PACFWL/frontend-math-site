@@ -8,6 +8,7 @@ import SectorEdit from "./pages/SectorEdit";
 import TopicList from "./pages/TopicList";
 import TopicCreate from "./pages/TopicCreate";
 import TopicEdit from "./pages/TopicEdit";
+import TopicPlayground from "./pages/TopicPlayground";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/sector/:sectorId/topics" element={<TopicList />} />
         <Route path="/sector/:sectorId/topics/create" element={<TopicCreate />} />
         <Route path="/sector/:sectorId/topics/edit/:topicId" element={<TopicEdit />} />
+        <Route path="/sector/:sectorId/topics/play/:topicId" element={<TopicPlayground />} />
       </Routes>
     </BrowserRouter>
   );
